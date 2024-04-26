@@ -1,0 +1,6 @@
+(def multiverse (repeat "universe"))
+(first multiverse)
+(take 5 multiverse)
+(rest multiverse)
+(repeat 5 "universe")
+(last (repeat 5 "universe"))
