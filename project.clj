@@ -6,4 +6,7 @@
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [hiccup "2.0.0-RC3"]]
   :main ^:skip-aot test.core
-  :repl-options {:init-ns test.core})
+  :target-path "target/%s"
+  :repl-options {:init-ns test.core}
+  :profiles {:uberjar {:aot :all
+                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
